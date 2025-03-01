@@ -9,12 +9,19 @@
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png">
     <meta name="theme-color" content="#000000">
     <style>
-        body { margin: 0; padding: 0; text-align: center; background: #f8f8f8; }
-        embed { width: 100vw; height: 100vh; border: none; }
+        body { margin: 0; padding: 0; background: #f8f8f8; text-align: center; }
+        #pdf-container { width: 100%; height: 100vh; }
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
-    <embed src="Ramadan_Dua_Guide_KAA.pdf" type="application/pdf">
+    <h1>Ramadan Dua Guide</h1>
+    <div id="pdf-container">
+        <!-- Embed the PDF -->
+        <iframe src="https://kkq96.github.io/Ramadan-Duas/Ramadan_Dua_Guide_KAA.pdf" frameborder="0">
+        </iframe>
+    </div>
+
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js')
